@@ -1,0 +1,179 @@
+body{
+    background: linear-gradient(
+        90deg,
+        #DD95F7 0%, #9AADF9 50%, #7FC9D9 100%
+    );
+}
+
+header{
+    background-color: #d3ebff;
+    padding: 20px 0;
+}
+
+.caja{
+    width: 940px; /*ocupa 940 de los 1080 piexeles = 70%*/
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position:absolute; /*posicionar elemento en cualquier lugar de la página*/
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*capturar el movimiento del mouse*/
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%; /*Que cada elemento ocupe el 30% del espacio*/
+    vertical-align: top;
+    background-color: white;
+    margin: 0 1.5%; /*1.5 de cada margen lateral, 6x1.5=9*/
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #00ffea;
+    /*En la estructura de “cajas” del CSS, un borde queda posicionado entre el padding y el margin.*/
+    border-radius: 15px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+
+.productos li:active{
+    border-color: #088c19;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.producto-descripcion{
+    font-size: 18px;
+}
+
+.producto-precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background-color: #cb2dfc;
+    /*background: url(imagenes/bg.jpg);*/
+    padding: 40px;
+}
+
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+    font-family: 'Trebuchet MS';
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px; /*La propiedad padding sirve para cambiar el espaciado interno, entre el contenido y el borde.*/
+    width: 50%; /*La mitad del largo de la página*/
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+/* Jerarquía de estilos en CSS
+1. Inline
+2. ID
+3. Class
+4. Etiqueta */
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /*Que tarde en cambiar el color y el tamaño*/
+    cursor: pointer; /*manita*/
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.2) /*rotate(70deg)*/;
+}
+
+table{
+    margin: 40px 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+td{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    background-color: #FFFFFF;
+}
+
+
